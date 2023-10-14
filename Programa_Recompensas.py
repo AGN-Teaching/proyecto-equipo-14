@@ -135,20 +135,15 @@ class ProgramaRecompensas:
                 if 0 <= numero_compania_origen < len(self.cliente_actual.companias_afiliadas):
                     compania_origen = self.cliente_actual.companias_afiliadas[numero_compania_origen]
 
-                    # Mostrar los beneficios de la compañía de origen
-                    print(f"Beneficios de {compania_origen.nombre}:")
-                    for i, (beneficio, info) in enumerate(compania_origen.beneficios.items(), 1):
-                        print(f"{i}. {beneficio}")
-
                     # Ingresar el número de la compañía de destino
                     numero_compania_destino = int(input("Ingrese el número de la compañía de destino: ")) - 1
 
                     if 0 <= numero_compania_destino < len(self.cliente_actual.companias_afiliadas):
                         compania_destino = self.cliente_actual.companias_afiliadas[numero_compania_destino]
 
-                        # Mostrar los beneficios de la compañía de destino
-                        print(f"Beneficios de {compania_destino.nombre}:")
-                        for i, (beneficio, info) in enumerate(compania_destino.beneficios.items(), 1):
+                        # Mostrar los beneficios de la compañía de origen
+                        print(f"Beneficios de {compania_origen.nombre}:")
+                        for i, (beneficio, info) in enumerate(compania_origen.beneficios.items(), 1):
                             print(f"{i}. {beneficio}")
 
                         # Ingresar el número del beneficio a transferir
@@ -193,8 +188,6 @@ class ProgramaRecompensas:
         else:
             print("Una de las compañías no está en la lista de compañías afiliadas.")
 
-
-
     # Método para mostrar el catálogo de beneficios disponibles.
     def mostrar_catalogo_beneficios_cliente(self):
         print("\nCatálogo de Beneficios Disponibles:")
@@ -211,32 +204,6 @@ class ProgramaRecompensas:
                 print(f"  Descripción: {descripcion}")
                 print(f"  Requisito de Gasto: ${requisito_gasto}")
                 print("---------------")
-
-    # Menú principal para el administrador.
-    def menu_admin(self):
-        while True:
-            print("\nMenú Administrador:")
-            print("1. Menu Compañias")
-            print("2. Menu Beneficios")
-            print("3. Clientes")
-            print("4. Mostrar Información")
-            print("5. Volver al Menú Principal")
-
-            opcion = input("Seleccione una opción: ")
-
-            if opcion == "1":
-                self.menu_compania()
-            elif opcion == "2":
-                self.menu_beneficios()
-            elif opcion == "3":
-                self.menu_clientes_admin()
-            elif opcion == "4":
-                self.mostrar_informacion()
-            elif opcion == "5":
-                self.guardar_informacion()
-                break
-            else:
-                print("Opción incorrecta. Por favor, seleccione una opción válida.")
 
     # Método para agregar una compañía socia.
     def agregar_compania_socia(self):
@@ -435,93 +402,6 @@ class ProgramaRecompensas:
         else:
             print("Número de cliente no válido.")
 
-    # Método para mostrar el menú de eliminación de clientes o compañías.
-    def menu_eliminar(self):
-        while True:
-            print("Menú de Eliminación:")
-            print("1. Eliminar Compañía")
-            print("2. Eliminar Cliente")
-            print("3. Volver")
-
-            opcion = input("Seleccione una opción: ")
-
-            if opcion == "1":
-                self.menu_eliminar_compania()
-            elif opcion == "2":
-                self.menu_eliminar_cliente()
-            elif opcion == "3":
-                self.guardar_informacion()
-                break
-            else:
-                print("Opción incorrecta, vuelva a intentar")
-
-    # Metodos para agregar y eliminar beneficios, Compañias y clientes
-    def menu_beneficios(self):
-        while True:
-            print(" Menu Beneficios")
-            print("1. Agregar Beneficio")
-            print("2. Eliminar Beneficio")
-            print("3. Regresar")
-
-            opcion = input("Seleccione una opción: ")
-
-            if opcion == "1":
-                self.agregar_beneficio()
-            elif opcion == "2":
-                self.eliminar_beneficio()
-            elif opcion == "3":
-                self.guardar_informacion()
-                break
-            else:
-                print("Opción incorrecta, vuelva a intentar")
-
-    def menu_compania(self):
-        while True:
-            print(" Menu Compañias")
-            print("1. Agregar Compañia")
-            print("2. Eliminar Compañia")
-            print("3. Editar Compañia")
-            print("4. Regresar")
-
-            opcion = input("Seleccione una opción: ")
-
-            if opcion == "1":
-                self.agregar_compania_socia()
-            elif opcion == "2":
-                self.menu_eliminar_compania()
-            elif opcion == "3":
-                self.editar_compania_socia()
-                print("Desea agregar o eliminar algun beneficio")
-                self.menu_beneficios()
-            elif opcion == "4":
-                self.guardar_informacion()
-                break
-            else:
-                print("Opción incorrecta, vuelva a intentar")
-
-    def menu_clientes_admin(self):
-        while True:
-            print(" Menu Clientes")
-            print("1. Agregar Cliente")
-            print("2. Eliminar Cliente")
-            print("3. Mostrar informacion del cliente")
-            print("4. Regresar")
-
-            opcion = input("Seleccione una opción: ")
-
-            if opcion == "1":
-                self.agregar_cliente()
-            elif opcion == "2":
-                self.menu_eliminar_cliente()
-            elif opcion == "3":
-                self.ver_informacion_cliente()
-            elif opcion == "4":
-                self.guardar_informacion()
-                break
-            else:
-                print("Opción incorrecta, vuelva a intentar")
-
-
     # Metodo para eliminar beneficios de las compañias
     def eliminar_beneficio(self):
         # Mostrar una lista de compañías disponibles para que el usuario elija
@@ -671,23 +551,3 @@ class ProgramaRecompensas:
                 print(f"- {compania.nombre}")
         else:
             print(f"Cliente con nombre '{nombre_cliente}' no encontrado.")
-
-    # Metodo para editar una compañia
-    def editar_compania_socia(self):
-        print("Compañías disponibles para editar:")
-        for i, compania in enumerate(self.companias, start=1):
-            print(f"{i}. {compania.nombre}")
-
-        seleccion = input("Seleccione el número de la compañía que desea editar: ")
-        if seleccion.isdigit():
-            seleccion = int(seleccion)
-            if 1 <= seleccion <= len(self.companias):
-                nueva_compania_nombre = input("Ingrese el nuevo nombre de la compañía: ")
-                self.companias[seleccion - 1].nombre = nueva_compania_nombre
-                print(f"Compañía '{self.companias[seleccion - 1].nombre}' editada con éxito.")
-            else:
-                print("Número de selección fuera de rango.")
-        else:
-            print("Entrada no válida. Debe ingresar el número correspondiente.")
-
-

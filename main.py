@@ -1,10 +1,11 @@
 from Programa_Recompensas import ProgramaRecompensas #Importa la Programa de recompensas
-
+from Menus import Menu
 #Define la clase Main
 class Main:
     def __init__(self):
         # Inicializa la instancia de ProgramaRecompensas
         self.programa_recompensas = ProgramaRecompensas()
+        self.menus = Menu()
 
     def menu_principal(self):
         while True:
@@ -19,7 +20,7 @@ class Main:
 
             if opcion == "1":
                 # Llama al menú de clientes
-                self.programa_recompensas.menu_clientes()
+                self.menus.menu_clientes()
 
             elif opcion == "2":
                 # Solicita nombre de usuario y contraseña para autenticar al administrador
@@ -28,7 +29,7 @@ class Main:
 
                 # Verifica las credenciales del administrador y muestra el menú de administrador si son correctas
                 if self.programa_recompensas.autenticar_admin(usuario, contrasena):
-                    self.programa_recompensas.menu_admin()
+                    self.menus.menu_admin()
                 else:
                     print("El usuario o contraseña está incorrecto.")
 

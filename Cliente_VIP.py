@@ -47,9 +47,3 @@ class ClienteVIP(Cliente):
                 # Si no es mayor o igual, reduce la cantidad del beneficio
 
                 self.beneficios_transferibles[beneficio_nombre] -= cantidad
-
-
-
-
-
-
