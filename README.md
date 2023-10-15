@@ -96,6 +96,31 @@ La clase Main tiene una relación de asociación con la clase ProgramaRecompensa
 La clase Menu tiene una relación de asociación con la clase ProgramaRecompensas y la clase Main. La relación con la clase ProgramaRecompensas se debe a que Menu utiliza una instancia de ProgramaRecompensas para interactuar con los datos y realizar operaciones basadas en las opciones seleccionadas por el usuario. Además, la relación con la clase Main se debe a que Menu es una parte fundamental de la lógica de Main y se utiliza para proporcionar opciones de menú y gestionar las interacciones del usuario dentro de la aplicación global.
 
 ![proyecto (1)](https://github.com/AGN-Teaching/proyecto-equipo-14/assets/141948025/e3259688-1f21-44d0-8136-f450e17d60a6)
+# MANEJO DE ERRORES
+
+
+![97120fea-be73-4610-a9dd-509468054a9a](https://github.com/AGN-Teaching/proyecto-equipo-14/assets/141948025/0cd0af57-feb0-494f-a8bb-ce307f85ec18)
+
+
+En este caso, el error radica en que al agregar un beneficio en la función "agregar compañía," solo se habían definido las variables "nombre_compañia" y "beneficios," en la que solo se especificaba la descripción del beneficio. Sin embargo, al momento de agregar el beneficio, faltaba una variable que no estaba definida, que era el requisito del gasto para el beneficio.
+
+
+Este error se corrigió agregando en la variable "beneficio" las dos definiciones, es decir, la descripción y el requisito de gastos.
+
+
+![3ad3d162-169c-455a-9091-417faa792812](https://github.com/AGN-Teaching/proyecto-equipo-14/assets/141948025/7f612069-b751-45b3-8e1f-77cc58fbb88b)
+
+
+Este error ocurrió ya que en la función mostrar información no se había definido el atributo compañias lo cual generaba el error al seleccionar mostrar información en el menú administrador esto se corrigió definiendo el atributo en el objeto para que no sucediera el error.
+
+
+DEL SIGUIENTE ERROR, NO SE CUENTA CON IMAGEN, PERO TRATABA DE LO SIGUIENTE:
+
+
+Al momento de guardar o cargar un archivo ocurría el error de que no  se guardaba la información esto ocurría porque para guardar objetos personalizados en un archivo de texto se necesitaban serializar y deserializar esos objetos se solucionó utilizando el módulo "pickle" lo cual si permitía la serializacion y deserializacion de las listas, diccionarios u otro
+
+# PRUEBAS
+
 
 
 # CONCLUSIONES
