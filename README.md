@@ -1,3 +1,24 @@
+<div align="center">
+  <h1>UNIVERSIDAD AUTÓNOMA METROPOLITANA</h1>
+  <h2>UNIDAD CUAJIMALPA</h2>
+  <hr>
+  
+  <h2>Informe del Proyecto</h2>
+  
+  <h3>LICENCIATURA EN INGENIERÍA EN COMPUTACIÓN</h3>
+  
+  <p><strong>Tema:</strong> Programa de Recompensas</p>
+  
+  <h3>Equipo de trabajo:</h3>
+  <p>Erik Muñoz Rodríguez</p>
+  <p>Luis Fernando Fabián Guzmán</p>
+  
+  <h3>UEA:</h3>
+  <p>PROGRAMACIÓN ORIENTADA A OBJETOS</p>
+  
+  <h3>PROFESOR:</h3>
+  <p>Abel García Nájera</p>
+</div>
 # ANALISIS DEL PROBLEMA
 
 
