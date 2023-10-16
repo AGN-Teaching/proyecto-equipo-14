@@ -539,7 +539,7 @@ class ProgramaRecompensas:
             cliente_vip.companias_afiliadas.extend(companias_cliente)
             print("Compañías afiliadas actualizadas con éxito para Cliente VIP.")
 
-    # Metodo para ver la informacion de un cliente en especifico
+    # Metodo para ver la informacion de un cliente o compaia en especifico
     def ver_informacion_cliente(self):
         nombre_cliente = input("Ingrese el nombre del cliente: ")
         cliente_encontrado = self.buscar_cliente(nombre_cliente)
@@ -551,3 +551,17 @@ class ProgramaRecompensas:
                 print(f"- {compania.nombre}")
         else:
             print(f"Cliente con nombre '{nombre_cliente}' no encontrado.")
+
+    def ver_informacion_compania(self, nombre_compania):
+        compania = next((c for c in self.companias if c.nombre == nombre_compania), None)
+        if compania:
+            print(f"Información de la Compañía '{nombre_compania}':")
+            for beneficio, info in compania.beneficios.items():
+                descripcion = info['descripcion']
+                requisito_gasto = info['requisito_gasto']
+                print(f"- Beneficio: {beneficio}")
+                print(f"  Descripción: {descripcion}")
+                print(f"  Requisito de Gasto: ${requisito_gasto}")
+        else:
+            print(f"No se encontró una compañía con el nombre '{nombre_compania}'.")
+

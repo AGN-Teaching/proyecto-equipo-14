@@ -54,7 +54,8 @@ class Menu:
             print(" Menu Compañias")
             print("1. Agregar Compañia")
             print("2. Eliminar Compañia")
-            print("3. Regresar")
+            print("3. Mostrar informacion de una compañia")
+            print("4. Regresar")
 
             opcion = input("Seleccione una opción: ")
 
@@ -63,6 +64,10 @@ class Menu:
             elif opcion == "2":
                 self.programa_recompensas.menu_eliminar_compania()
             elif opcion == "3":
+                self.programa_recompensas.mostrar_lista_companias()
+                nombre_compania = input("Ingrese el nombre de la compañía que desea ver: ")
+                self.programa_recompensas.ver_informacion_compania(nombre_compania)
+            elif opcion == "4":
                 self.programa_recompensas.guardar_informacion()
                 break
             else:
