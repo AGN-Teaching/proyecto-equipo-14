@@ -19,6 +19,7 @@
   <h3>PROFESOR:</h3>
   <p>Abel García Nájera</p>
 </div>
+
 # ANALISIS DEL PROBLEMA
 
 
@@ -116,7 +117,9 @@ La clase Main tiene una relación de asociación con la clase ProgramaRecompensa
 
 La clase Menu tiene una relación de asociación con la clase ProgramaRecompensas y la clase Main. La relación con la clase ProgramaRecompensas se debe a que Menu utiliza una instancia de ProgramaRecompensas para interactuar con los datos y realizar operaciones basadas en las opciones seleccionadas por el usuario. Además, la relación con la clase Main se debe a que Menu es una parte fundamental de la lógica de Main y se utiliza para proporcionar opciones de menú y gestionar las interacciones del usuario dentro de la aplicación global.
 
-![proyecto (1)](https://github.com/AGN-Teaching/proyecto-equipo-14/assets/141948025/e3259688-1f21-44d0-8136-f450e17d60a6)
+![ultproyecto](https://github.com/AGN-Teaching/proyecto-equipo-14/assets/141948025/0e93a459-96bf-4241-bef5-4b473b95b42a)
+
+
 # MANEJO DE ERRORES
 
 
