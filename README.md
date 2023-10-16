@@ -145,6 +145,48 @@ Al momento de guardar o cargar un archivo ocurría el error de que no  se guarda
 
 # PRUEBAS
 
+# REGISTRAR UN NUEVO CLIENTE
+
+
+![67010410-65af-42c4-9d29-40501150f7d8](https://github.com/AGN-Teaching/proyecto-equipo-14/assets/141948025/e2209520-56af-4e34-807d-d45a08bf113e)
+
+
+# TRANSFERIR BENEFICIOS SI ERES CLIENTE VIP
+
+
+![19d6ee7f-27dd-4d03-9e1d-2c6c0b3834b1](https://github.com/AGN-Teaching/proyecto-equipo-14/assets/141948025/a9f61195-fc91-4833-89a9-537fd0ce21c4)
+
+# REQUIRIMIENTOS PARA EL DESCUENTO EN UNA COMPAÑIA
+
+
+![e6601e9c-e024-400a-adee-1dd1af6609a5](https://github.com/AGN-Teaching/proyecto-equipo-14/assets/141948025/252f1e5a-b8a3-42f9-8d1c-88072931e4b3)
+
+# LISTA DE COMPAÑIAS CON SUS DESCRIPCIONES
+
+
+![d2fd12e2-f5aa-4b93-82c8-209d333a2960](https://github.com/AGN-Teaching/proyecto-equipo-14/assets/141948025/6c47cc5b-e96d-4451-bca5-5aed0c38ccf1)
+
+
+![062022d3-44a6-44de-9197-c381acc08720](https://github.com/AGN-Teaching/proyecto-equipo-14/assets/141948025/333ff567-d8ed-4efa-83dc-cc485655f794)
+
+
+# ELIMINAR UNA EMPRESA
+
+
+![662f3031-aa02-4b6d-a38f-739525f814e6](https://github.com/AGN-Teaching/proyecto-equipo-14/assets/141948025/f623d280-00ad-4e96-bdc0-4942bd0177ff)
+
+
+# MENU ADMINISTRADOR
+
+
+![5701f962-200a-4f8c-a37f-a68060395f43](https://github.com/AGN-Teaching/proyecto-equipo-14/assets/141948025/27d94fca-5091-4bfc-a878-6e7ab80a60c0)
+
+
+# AGREGAR BENEFICIOS
+
+
+![c7b58ee4-3f5e-4681-85fb-038ecd621ea0](https://github.com/AGN-Teaching/proyecto-equipo-14/assets/141948025/01c57395-a185-4158-9b20-fa75f48329f4)
+
 
 
 # CONCLUSIONES
